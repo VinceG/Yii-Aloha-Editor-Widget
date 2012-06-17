@@ -1,11 +1,12 @@
-Yii-RedactorJS-Widget
-=====================
+Yii-Aloha-Editor-Widget
+==========================
 
-Yii Widget for the WYSIWYG RedactorJS editor
+Yii Widget for the Aloha Editor
 
 - [Project Page](http://aloha-editor.org/)
 - [Examples](http://aloha-editor.org/demos.php)
 - [Documentation](http://aloha-editor.org/builds/development/latest/doc/guides/output/using_aloha.html)
+- [Yii Widget On Github](https://github.com/VinceG/Yii-Aloha-Editor-Widget)
 
 Requirements
 =====================
