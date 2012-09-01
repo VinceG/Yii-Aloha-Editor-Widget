@@ -67,6 +67,11 @@ class AlohaEditor extends CInputWidget {
 		// Publish required assets
 		$cs = Yii::app()->getClientScript();
 		
+		// Register the JQuery UI script
+		$cs->registerCoreScript('jquery.ui');
+		// Register the Aloha require.js
+		$cs->registerScriptFile($assets.'/lib/require.js');
+		
 		$jsFile = 'aloha.js';
 		$filePath = $assets.'/lib/' . $jsFile;
 		$plugins = array('common/format' => 'common/format');
@@ -142,7 +147,7 @@ class AlohaEditor extends CInputWidget {
 		// which cclientscript does not support currently
 		echo '<script type="text/javascript" src="'.$filePath.'" data-aloha-plugins="'.implode(',', $plugins).'"></script>';
 		// Register the css through the aloha cdn network as they update it often
-		$cs->registerCSSFile('http://cdn.aloha-editor.org/current/css/aloha.css');
+		$cs->registerCSSFile($assets.'/css/aloha.css');
 		
 		// Include the id to the html text area if we will be using it
         $this->htmlOptions['id'] = $id;
